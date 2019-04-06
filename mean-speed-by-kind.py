@@ -20,7 +20,7 @@ import logging
 
 ################ INIT
 
-pass=""
+dbpass=""
 
 day0 = date.today() - timedelta(1)
 xday0 = day0.strftime('%Y-%m-%d')
@@ -88,7 +88,7 @@ def kind_desc(code):
 
 db = MySQLdb.connect(host="10.103.0.51",    # pma.dlt.transcodeglobal.com
                      user="gps-behv",         # your username
-                     passwd=pass,  # your password
+                     passwd=dbpass,  # your password
                      db="gps",        # name of the data base
                      charset='utf8')
 
