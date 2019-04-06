@@ -105,4 +105,4 @@ df["kind_desc"] = df["kind_code"].apply(kind_desc)
 
 df = df[["stat_date","type_code","type_desc","kind_code","kind_desc","avg_speed","sd_speed"]]
 
-df.to_csv("meanspeed/veh_speed.csv", index=False, mode='a', header=False, encoding='utf-8-sig')
+df.to_csv("/var/www/html/vehspeed/meanspeed/veh_speed.csv", index=False, mode='a', header=False, encoding='utf-8-sig')
