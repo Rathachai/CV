@@ -26,8 +26,8 @@ day0 = date.today() - timedelta(1)
 xday0 = day0.strftime('%Y-%m-%d')
 
 
-#logging.basicConfig(filename="/root/gps34/log/mean-speed-by-kind-{0}.log".format(day0.strftime('%Y-%m-%d')),level=logging.DEBUG)
-logging.basicConfig(filename="log/mean-speed-by-kind-{0}.log".format(day0.strftime('%Y-%m-%d')),level=logging.DEBUG)
+logging.basicConfig(filename="/root/gps34/log/mean-speed-by-kind-{0}.log".format(day0.strftime('%Y-%m-%d')),level=logging.DEBUG)
+#logging.basicConfig(filename="log/mean-speed-by-kind-{0}.log".format(day0.strftime('%Y-%m-%d')),level=logging.DEBUG)
 
 ########## MQTT
 
